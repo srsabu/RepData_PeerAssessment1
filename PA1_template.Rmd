@@ -102,5 +102,7 @@ activityFilled$weekday <- as.factor(activityFilled$weekday)
 averageStepsPerPeriodFilled <- aggregate(activityFilled$steps ~ activityFilled$interval+activityFilled$weekday, FUN=mean)
 colnames(averageStepsPerPeriodFilled) <- c("interval", "weekday", "steps")
 library(lattice)
-xyplot(averageStepsPerPeriodFilled$steps~averageStepsPerPeriodFilled$interval|averageStepsPerPeriodFilled$weekday, type="l", xlab="Interval", ylab="Number of Steps")
+xyplot(averageStepsPerPeriodFilled$steps~averageStepsPerPeriodFilled$interval|averageStepsPerPeriodFilled$weekday, type="l", xlab="Interval", ylab="Number of Steps", layout=c(1,2,1))
 ```
+
+Visual inspection indicates that the activity is similar, but shifted later in time, over the weekends.
