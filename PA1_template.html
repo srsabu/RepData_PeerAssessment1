@@ -267,7 +267,7 @@ maxInterval$interval
 <pre><code>## [1] 2304
 </code></pre>
 
-<h3>fill in missing values with mean for that interval</h3>
+<h3>fill in missing values with the previously calculated mean for that interval across all days</h3>
 
 <pre><code class="r">## assign interval mean to missing values 
 activityFilled &lt;- merge(activity, averageStepsByPeriod, all.x = TRUE, by.x=&quot;interval&quot;, by.y=&quot;interval&quot;)

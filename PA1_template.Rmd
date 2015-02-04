@@ -56,7 +56,7 @@ maxInterval$interval
 sum(is.na(activity$steps))
 ```
 
-### fill in missing values with mean for that interval
+### fill in missing values with the previously calculated mean for that interval across all days
 
 ``` {r}
 ## assign interval mean to missing values 

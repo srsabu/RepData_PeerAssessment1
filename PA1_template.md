@@ -84,7 +84,7 @@ sum(is.na(activity$steps))
 ## [1] 2304
 ```
 
-### fill in missing values with mean for that interval
+### fill in missing values with the previously calculated mean for that interval across all days
 
 
 ```r
